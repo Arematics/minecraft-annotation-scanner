@@ -11,7 +11,7 @@ After this start **gradlew jar** or **gradlew publishToMavenLocal**
 
 ## Usage
 
-Then you could run these lines later in all other projects by replacing "my.package.name" with your project package
+Then you could run these lines later in all other projects by replacing "my.package.name" with your project package. The **bootstrap** needs to be your JavaPlugin Class where Listeners and Commands should be added.
 ```
 String url ="my.package.name";
 CommandHooks.hookCommands(url, this.getClass().getClassLoader(), bootstrap);
