@@ -3,6 +3,12 @@ Scans for Annotations in Modules so no self registration of Listeners and Comman
 
 ### This plugin should be started first.
 
+##Build
+To build this project you must clone it and add an **new folder Libs**, 
+there you need to add your Spigot **as SpigotServer.jar**.
+
+After this start **gradlew jar** or **gradlew publishToMavenLocal**
+
 ## Usage
 
 Then you could run these lines later in all other projects by replacing "my.package.name" with your project package
