@@ -7,7 +7,7 @@ compileJava.options.encoding = 'UTF-8'
 repositories {
     mavenLocal()
     flatDir {
-        dirs '../Libs'
+        dirs 'Libs'
     }
     mavenCentral()
 }
