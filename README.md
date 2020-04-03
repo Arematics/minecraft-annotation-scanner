@@ -3,7 +3,8 @@ Scans for Annotations in Modules so no self registration of Listeners and Comman
 
 ### This plugin should be started first.
 
-##Build
+## Build
+
 To build this project you must clone it and add an **new folder Libs**, 
 there you need to add your Spigot **as SpigotServer.jar**.
 
