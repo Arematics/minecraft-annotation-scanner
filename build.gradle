@@ -1,0 +1,42 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = 1.8
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenLocal()
+    flatDir {
+        dirs '../Libs'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    //Kernel Plugins for all Modules of Arematics
+    compileOnly  name: 'SpigotServer'
+
+    //Provided for using AutoService Annotations
+    compile group: 'org.reflections', name: 'reflections', version: '0.9.12'
+}
+
+jar {
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            version = this.version
+            from components.java
+        }
+    }
+
+
+}
+
+
