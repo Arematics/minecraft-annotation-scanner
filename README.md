@@ -1,3 +1,4 @@
+# Support and updates for this library ended.
 # minecraft-annotation-scanner
 Scans for Annotations in Modules so no self registration of Listeners and Commands is now longer needed
 
